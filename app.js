@@ -7,6 +7,7 @@ let shipping = document.querySelector(".shippingprice");
 plus.forEach((item) => {
   item.addEventListener("click", plusOne);
 })
+
 function plusOne() {
   let productCount = this.previousElementSibling;
   productCount.innerHTML = parseInt(productCount.innerHTML) + 1;
@@ -47,5 +48,4 @@ function removeBtn() {
     shipping.innerHTML = "$" + 0.00
     total.innerHTML = "$" + 0.00
   }
-
 }
